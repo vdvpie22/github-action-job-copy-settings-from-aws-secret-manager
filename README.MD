@@ -30,11 +30,12 @@ Stored file names
 ## Example usage
 
 ```yaml
-uses: vdvpie22/github-action-job-copy-settings-from-aws-secret-manager@v1.0.0
-   with:   
-     AWS_ACCESS_KEY_ID: '*****'
-     AWS_SECRET_ACCESS_KEY: '*****'
-     AWS_REGION: 'eu-west-2'
-     SAVE_TO_DIR: /tmp/
+- name: someName 
+  uses: vdvpie22/github-action-job-copy-settings-from-aws-secret-manager@v1.0.0
+  with:   
+    AWS_ACCESS_KEY_ID: '*****'
+    AWS_SECRET_ACCESS_KEY: '*****'
+    AWS_REGION: 'eu-west-2'
+    SAVE_TO_DIR: /tmp/
 
 ```
