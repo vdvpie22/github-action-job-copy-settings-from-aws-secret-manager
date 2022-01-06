@@ -13,6 +13,9 @@ inputs:
   SAVE_TO_DIR:
     description: 'Exists directory to store files'
     required: true
+  SERVICE_NAME:
+    description: 'Service name tag Value'
+    required: true
 outputs:
   file_names:
     description: 'List of saved files'
