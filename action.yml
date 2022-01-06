@@ -1,0 +1,21 @@
+name: 'Copy settings from aws secret manager'
+description: 'Read settings from AWS secret manager and safe to settings file'
+inputs:
+  AWS_ACCESS_KEY_ID:
+    description: 'Access Key ID to AWS'
+    required: true
+  AWS_SECRET_ACCESS_KEY:
+    description: 'Secret Access Key to AWS'
+    required: true
+  AWS_REGION:
+    description: 'Region AWS'
+    required: true
+  SAVE_TO_DIR:
+    description: 'Exists directory to store files'
+    required: true
+outputs:
+  file_names:
+    description: 'List of saved files'
+runs:
+  using: 'node16'
+  main: 'index.js'

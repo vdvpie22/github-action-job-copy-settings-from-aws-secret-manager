@@ -1,0 +1,26 @@
+{
+  "name": "github-action-job-copy-settings-from-aws-secret-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdvpie22/github-action-job-copy-settings-from-aws-secret-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vdvpie22/github-action-job-copy-settings-from-aws-secret-manager/issues"
+  },
+  "homepage": "https://github.com/vdvpie22/github-action-job-copy-settings-from-aws-secret-manager#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "aws-sdk": "^2.1051.0",
+    "bluebird": "^3.7.2"
+  }
+}
