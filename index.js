@@ -12,8 +12,9 @@ async function main () {
 		const awsSecretAccessKey = core.getInput('AWS_SECRET_ACCESS_KEY');
 		const awsRegion = core.getInput('AWS_REGION');
 		const saveToDir = core.getInput('SAVE_TO_DIR');
+		const serviceName = core.getInput('SERVICE_NAME');
 
-		if (!awsAccessKeyId || !awsSecretAccessKey || !awsRegion || !saveToDir) {
+		if (!awsAccessKeyId || !awsSecretAccessKey || !awsRegion || !saveToDir || !serviceName) {
 			throw {message: 'Check parameters'};
 		}
 		AWS.config.setPromisesDependency(Promise);
@@ -35,7 +36,7 @@ async function main () {
 				{
 					Key: 'tag-value',
 					Values: [
-						'documents-service'
+						serviceName
 					]
 				},
 			],

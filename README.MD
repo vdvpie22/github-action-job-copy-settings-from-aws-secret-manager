@@ -21,6 +21,10 @@ This action read AWS Secret Manager by tag and store file to configured director
 
 **Required** Directory path to store json with settings.  Default `null`.
 
+## `SERVICE_NAME`
+
+**Required** Get secrets by Service Name Tag.  Default `null`.
+
 ## Outputs
 
 ## `file_names`
@@ -36,6 +40,7 @@ Stored file names
     AWS_ACCESS_KEY_ID: '*****'
     AWS_SECRET_ACCESS_KEY: '*****'
     AWS_REGION: 'eu-west-2'
+    SERVICE_NAME: 'document-service'
     SAVE_TO_DIR: /tmp/
 
 ```
