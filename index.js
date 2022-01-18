@@ -52,7 +52,7 @@ async function main () {
 			const env = envTag.Value;
 
 			const secretValue = await secretsManager.getSecretValue({  SecretId: secret.ARN }).promise();
-			await fs.writeFile(path.join(saveToDir, `${env}_config.json`), secretValue.SecretString);
+			await fs.writeFile(path.join(saveToDir, 'src', 'config', `${env}_config.json`), secretValue.SecretString);
 			fileNames.push(path.join(saveToDir, 'src', 'config',`${env}_config.json`));
 		}
 
